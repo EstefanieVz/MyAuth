@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Env;
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -82,7 +83,8 @@ return [
     |
     */
 
-    'locale' => 'en',
+    // 'locale' => 'es',
+    'locale' => ENV('APP_LOCALE','en'),
 
     /*
     |--------------------------------------------------------------------------
